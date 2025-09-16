@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
+    color: white;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.devices-section, .command-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.devices-list {
+    margin-top: 15px;
+}
+
+.device-item {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.command-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.command-form select, .command-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.command-form button {
+    padding: 10px 20px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.command-form button:hover {
+    background: #0052a3;
+}
+
+#command-result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+    
+    .command-form {
+        flex-direction: column;
+    }
+    
+    .command-form select, .command-form input {
+        min-width: 100%;
+    }
+}
