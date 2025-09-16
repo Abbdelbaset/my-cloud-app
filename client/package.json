@@ -1,0 +1,16 @@
+{
+  "name": "cloud-client",
+  "version": "1.0.0",
+  "description": "Web client for cloud-based device management",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "build": "echo 'No build process needed for simple HTML app'"
+  },
+  "keywords": ["cloud", "device-management", "web"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
