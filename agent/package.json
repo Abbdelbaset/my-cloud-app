@@ -1,0 +1,17 @@
+{
+  "name": "device-agent",
+  "version": "1.0.0",
+  "description": "Agent for device management client",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js",
+    "install-service": "node installer.js"
+  },
+  "keywords": ["device", "agent", "management"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io-client": "^4.7.2",
+    "systeminformation": "^5.18.4"
+  }
+}
