@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة الأجهزة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>نظام إدارة الأجهزة</h1>
+            <p>لوحة التحكم للإدارة المركزية للأجهزة</p>
+        </header>
+        
+        <div class="dashboard">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>الأجهزة المتصلة</h3>
+                    <p id="connected-devices">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>الأوامر المرسلة</h3>
+                    <p id="sent-commands">0</p>
+                </div>
+            </div>
+            
+            <div class="devices-section">
+                <h2>الأجهزة المتصلة</h2>
+                <div id="devices-list" class="devices-list">
+                    <!-- سيتم ملء هذه القائمة بالأجهزة عبر JavaScript -->
+                    <p>لا توجد أجهزة متصلة حالياً...</p>
+                </div>
+            </div>
+            
+            <div class="command-section">
+                <h2>إرسال أمر</h2>
+                <div class="command-form">
+                    <select id="device-select">
+                        <option value="">اختر الجهاز</option>
+                    </select>
+                    <input type="text" id="command-input" placeholder="أدخل الأمر المراد تنفيذه">
+                    <button onclick="sendCommand()">إرسال الأمر</button>
+                </div>
+                <div id="command-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
